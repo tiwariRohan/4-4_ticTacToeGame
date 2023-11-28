@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #00ffcc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.cell:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px #00ffcc; /* Added box-shadow for the glowing effect */
+}
+
+.undo {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00ffcc;
+    color: #111;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.undo:hover {
+    background-color: #008b6b;
+}

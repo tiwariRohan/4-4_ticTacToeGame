@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>4x4 Tic Tac Toe</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">4x4 Tic Tac Toe</h1>
+
+    <div id="board" class="board">
+        <!-- Cells are represented as buttons for a more interactive feel -->
+        <button class="cell" onclick="makeMove(0, 0)"></button>
+        <button class="cell" onclick="makeMove(0, 1)"></button>
+        <button class="cell" onclick="makeMove(0, 2)"></button>
+        <button class="cell" onclick="makeMove(0, 3)"></button>
+        <button class="cell" onclick="makeMove(1, 0)"></button>
+        <button class="cell" onclick="makeMove(1, 1)"></button>
+        <button class="cell" onclick="makeMove(1, 2)"></button>
+        <button class="cell" onclick="makeMove(1, 3)"></button>
+        <button class="cell" onclick="makeMove(2, 0)"></button>
+        <button class="cell" onclick="makeMove(2, 1)"></button>
+        <button class="cell" onclick="makeMove(2, 2)"></button>
+        <button class="cell" onclick="makeMove(2, 3)"></button>
+        <button class="cell" onclick="makeMove(3, 0)"></button>
+        <button class="cell" onclick="makeMove(3, 1)"></button>
+        <button class="cell" onclick="makeMove(3, 2)"></button>
+        <button class="cell" onclick="makeMove(3, 3)"></button>
+    </div>
+
+    <button class="undo" onclick="undoMove()">Undo</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
